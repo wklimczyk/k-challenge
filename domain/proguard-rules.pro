@@ -20,6 +20,8 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+-flattenpackagehierarchy 'domain'
+
 -keep public class * {
     public protected *;
 }

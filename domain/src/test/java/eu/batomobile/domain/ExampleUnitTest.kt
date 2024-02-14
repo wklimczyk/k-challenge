@@ -1,4 +1,4 @@
-package eu.batomobile.k_challenge
+package eu.batomobile.domain
 
 import org.junit.Test
 
