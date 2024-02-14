@@ -1,1 +1,5 @@
 /build
+
+full-r8-config.txt
+proguardMapping.txt
+proguardSeeds.txt
