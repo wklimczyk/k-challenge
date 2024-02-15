@@ -32,6 +32,6 @@ internal data class KahootResponse(
     @SerializedName("isValid") var isValid: Boolean? = null,
     @SerializedName("playAsGuest") var playAsGuest: Boolean? = null,
     @SerializedName("type") var type: String? = null,
-    @SerializedName("created") var created: Int? = null,
-    @SerializedName("modified") var modified: Int? = null
+    @SerializedName("created") var created: Long? = null,
+    @SerializedName("modified") var modified: Long? = null
 )

@@ -7,8 +7,6 @@ import dagger.hilt.components.SingletonComponent
 import eu.batomobile.data.provider.ApiPathProvider
 import eu.batomobile.data.provider.ProdApiPathProviderImpl
 import eu.batomobile.data.service.KahootService
-import eu.batomobile.domain.useCase.GetKahootUseCase
-import kotlinx.coroutines.Dispatchers
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Converter

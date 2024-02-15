@@ -1,4 +1,4 @@
-package eu.batomobile.domain.useCase.base
+package eu.batomobile.domain.usecase.base
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext

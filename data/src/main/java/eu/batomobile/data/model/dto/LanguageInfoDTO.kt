@@ -5,6 +5,6 @@ import com.google.gson.annotations.SerializedName
 
 internal data class LanguageInfoDTO(
     @SerializedName("language") var language: String? = null,
-    @SerializedName("lastUpdatedOn") var lastUpdatedOn: Int? = null,
+    @SerializedName("lastUpdatedOn") var lastUpdatedOn: Long? = null,
     @SerializedName("readAloudSupported") var readAloudSupported: Boolean? = null
 )

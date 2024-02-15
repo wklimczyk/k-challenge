@@ -1,12 +1,12 @@
-package eu.batomobile.domain.useCase
+package eu.batomobile.domain.usecase
 
 import eu.batomobile.domain.entity.Kahoot
 import eu.batomobile.domain.repository.KahootRepository
-import eu.batomobile.domain.useCase.base.UseCase
+import eu.batomobile.domain.usecase.base.UseCase
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 
-class GetKahootUseCase @Inject constructor(
+class GetKahootUseCase(
     dispatcher: CoroutineDispatcher,
     private val kahootRepository: KahootRepository,
 ) :
