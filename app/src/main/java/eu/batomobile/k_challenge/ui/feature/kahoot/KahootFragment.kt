@@ -1,9 +1,5 @@
 package eu.batomobile.k_challenge.ui.feature.kahoot
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import dagger.hilt.android.AndroidEntryPoint
 import eu.batomobile.k_challenge.databinding.FragmentKahootBinding
 import eu.batomobile.k_challenge.ui.feature.base.BaseFragmentWithVM
@@ -16,16 +12,16 @@ class KahootFragment :
 
     override fun onState(viewState: KahootViewState) {
         when (viewState) {
-            is KahootViewState.Loading -> {
+            is KahootViewState.Choices -> {
                 // Show loading
             }
 
-            is KahootViewState.Complete -> {
-                // Show kahoot
+            is KahootViewState.Answers -> {
+                // Show answers
             }
 
-            is KahootViewState.Error -> {
-                // Show error
+            is KahootViewState.Complete -> {
+                // Show points
             }
         }
     }

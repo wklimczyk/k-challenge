@@ -8,23 +8,23 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class KahootViewModel @Inject constructor(
-    private val kahootUseCase: GetKahootUseCase,
-) : BaseViewModel<KahootViewAction, KahootViewState>() {
+class KahootViewModel @Inject constructor() : BaseViewModel<KahootViewAction, KahootViewState>() {
     override fun onViewAction(viewAction: KahootViewAction) = when (viewAction) {
-        KahootViewAction.LoadKahoot -> loadKahoot()
+        is KahootViewAction.Init -> init(viewAction)
         KahootViewAction.NextQuestion -> TODO("Not yet implemented")
     }
 
-    private fun loadKahoot() {
+    private fun init(viewAction: KahootViewAction.Init) {
         viewModelScope.launch {
-            mutableState.value = KahootViewState.Loading
-            try {
-                val kahoot = kahootUseCase(Unit)
-                mutableState.value = KahootViewState.Complete(kahoot)
-            } catch (e: Exception) {
-                mutableState.value = KahootViewState.Error
-            }
+            mutableState.value =
+                KahootViewState.Choices(
+                    viewAction.question.time ?: DEFAULT_QUESTION_TIME_IN_SEC,
+                    viewAction.question
+                )
         }
+    }
+
+    companion object {
+        private const val DEFAULT_QUESTION_TIME_IN_SEC = 30
     }
 }

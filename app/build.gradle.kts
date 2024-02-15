@@ -50,6 +50,8 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.timber)
+    implementation(libs.glide)
+    implementation(libs.progressbar)
 
     // DI
     implementation(libs.hilt.android)

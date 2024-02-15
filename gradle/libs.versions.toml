@@ -11,6 +11,8 @@ gson = "2.10"
 okhttp = "4.12.0"
 coroutines = "1.7.3"
 splashscreen = "1.0.1"
+glide = "4.16.0"
+progressbar = "2.2.1"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -19,6 +21,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationVersion" }
 navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationVersion" }
 splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashscreen" }
+progressbar = { module = "com.akexorcist:round-corner-progress-bar", version.ref = "progressbar" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 
 timber = { module = "com.jakewharton.timber:timber", version = "5.0.1" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }

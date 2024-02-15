@@ -23,7 +23,6 @@ class MainActivity :
     override fun onViewState(viewState: MainViewState) = when (viewState) {
         MainViewState.Loading -> binding.progressContainer.isVisible = true
         MainViewState.Error -> onError()
-
         is MainViewState.Complete -> onComplete(viewState)
     }
 

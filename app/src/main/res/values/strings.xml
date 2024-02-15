@@ -3,5 +3,8 @@
     <string name="general_error_title">Something went wrong</string>
     <string name="general_error_message">Click OK to try again</string>
     <string name="common_ok">OK</string>
-
+    <string name="fragment_kahoot__title">Quiz</string>
+    <string name="fragment_kahoot__answer_correct">Correct</string>
+    <string name="fragment_kahoot__answer_wrong">Wrong</string>
+    <string name="fragment_kahoot__btn_continue">Continue</string>
 </resources>

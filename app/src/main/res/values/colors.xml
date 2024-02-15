@@ -9,11 +9,15 @@
 
     <!--    Style guide colors-->
     <color name="grey_f2_300">#FFF2F2F2</color>
+    <color name="grey_33_800">#FF333333</color>
+    <color name="grey_fa">#FFFAFAFA</color>
     <color name="purple_500">#FF46178F</color>
     <color name="red_2">#FFE21B3C</color>
     <color name="blue_2">#FF1368CE</color>
     <color name="yellow_3">#FFD89E00</color>
+    <color name="green_3">#FF66BF39</color>
     <color name="green_2">#FF26890C</color>
+    <color name="green">#FFB2DF9C</color>
     <color name="pink">#FFFF99AA</color>
 
 </resources>

@@ -13,7 +13,6 @@ class MainViewModel @Inject constructor(
 ) : BaseViewModel<MainViewAction, MainViewState>() {
     override fun onViewAction(viewAction: MainViewAction) = when (viewAction) {
         MainViewAction.LoadKahoot -> loadKahoot()
-        MainViewAction.NextQuestion -> TODO("Not yet implemented")
     }
 
     private fun loadKahoot() {
