@@ -6,19 +6,19 @@ core-ktx = "1.12.0"
 appcompat = "1.6.1"
 material = "1.11.0"
 navigationVersion = "2.7.7"
-appcompat-v7 = "28.0.0"
 retrofit = "2.9.0"
-gson = "2.9.0"
+gson = "2.10"
 okhttp = "4.12.0"
 coroutines = "1.7.3"
+splashscreen = "1.0.1"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-appcompat-v7 = { group = "com.android.support", name = "appcompat-v7", version.ref = "appcompat-v7" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationVersion" }
 navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationVersion" }
+splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashscreen" }
 
 timber = { module = "com.jakewharton.timber:timber", version = "5.0.1" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
