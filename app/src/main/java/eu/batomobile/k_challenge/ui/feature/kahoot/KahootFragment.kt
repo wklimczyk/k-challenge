@@ -13,14 +13,6 @@ class KahootFragment :
     BaseFragmentWithVM<FragmentKahootBinding, KahootViewAction, KahootViewState, KahootViewModel>() {
     override val binding by lazy { FragmentKahootBinding.inflate(layoutInflater) }
     override fun getViewModelClass() = KahootViewModel::class.java
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        viewModel.state.observe(viewLifecycleOwner, ::onState)
-        return super.onCreateView(inflater, container, savedInstanceState)
-    }
 
     override fun onState(viewState: KahootViewState) {
         when (viewState) {
