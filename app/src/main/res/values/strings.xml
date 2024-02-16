@@ -7,4 +7,5 @@
     <string name="fragment_kahoot__answer_correct">Correct</string>
     <string name="fragment_kahoot__answer_wrong">Wrong</string>
     <string name="fragment_kahoot__btn_continue">Continue</string>
+    <string name="fragment_kahoot__counter_format">%d / %d</string>
 </resources>

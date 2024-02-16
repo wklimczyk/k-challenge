@@ -8,6 +8,7 @@ import eu.batomobile.domain.entity.Question
 
 internal class QuestionMapper : Mapper<Question, QuestionDTO> {
     override fun mapToEntity(dto: QuestionDTO): Question = Question(
+        image = dto.image,
         question = dto.question,
         choices = dto.choices.map { ChoiceMapper().mapToEntity(it) } as ArrayList<Choice>
     )

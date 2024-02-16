@@ -3,11 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/fragment_kahoot">
+    app:startDestination="@id/fragment_loading_kahoot">
 
     <fragment
         android:id="@+id/fragment_kahoot"
         android:name="eu.batomobile.k_challenge.ui.feature.kahoot.KahootFragment"
-        tools:layout="@layout/fragment_kahoot" />
+        tools:layout="@layout/fragment_kahoot">
+        <argument
+            android:name="questionIndex"
+            app:argType="integer"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_next_question"
+            app:destination="@id/fragment_kahoot">
+            <argument
+                android:name="questionIndex"
+                app:argType="integer"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_loading_kahoot"
+        android:name="eu.batomobile.k_challenge.ui.feature.loader.LoadingKahootFragment"
+        tools:layout="@layout/fragment_loading_kahoot">
+        <action
+            android:id="@+id/action_show_kahoot"
+            app:destination="@id/fragment_kahoot">
+            <argument
+                android:name="questionIndex"
+                app:argType="integer"
+                app:nullable="false" />
+        </action>
+
+    </fragment>
 
 </navigation>
